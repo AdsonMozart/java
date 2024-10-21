@@ -1,0 +1,25 @@
+package fundamentos;
+
+public class TipoString {
+
+		public static void main(String[] args) {
+			System.out.println("Olá pessoal".charAt(2)); //Identificar o caracter do índice passado
+			
+			String s = "Boa tarde";
+			System.out.println(s.concat("!!!")); // 1º forma de concatenar
+			System.out.println(s + "!!!"); // 2º forma de concatenar
+			System.out.println(s.startsWith("Boa")); //Para saber se o valor da string inicia com o valor passado no parâmetro
+			System.out.println(s.toLowerCase().startsWith("boa")); //Primeiro converteu toda o valor da variável para lowercase e depois perguntou se inicia
+			System.out.println(s.length()); //Conta o número de índices do valor da variável
+			System.out.println(s.equals("boa tarde")); //Compara se o parâmetro é igual ao valor da variável passado
+			System.out.println(s.equalsIgnoreCase("BOA TARDE"));
+			
+			var nome = "Adson";
+			var sobrenome = "Mozart";
+			var idade = 22;
+			var salario = 12345.987;
+			
+			System.out.println("\nNome: " + nome + "\nSobrenome: " + sobrenome + "\nIdade: " + idade + "\nSalario: " + salario + "\n\n");
+			System.out.printf("O senhor %s %s tem %d de idade %ne ganha R$%.2f de salario. ", nome, sobrenome, idade, salario);
+		}
+}
